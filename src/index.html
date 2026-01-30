@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sai preetham Weather app</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://use.fontawesome.com/b5722f1bf7.js"></script><link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+	<!-- Allows us to make Search  -->
+	<span class="location-search">
+		<input type="text" name="input" value="" placeholder="Zipcode, or City and State">
+		<button type="button" name="search" class="search"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+	</span> 
+
+	<section>
+		<h1 id="location" class="info-text"></h1>
+		<div class="button"><span class="unit">C</span><span id="exchange"><i class="fa fa-exchange" aria-hidden="true"></i></span><span class="unit">F is also made</span></div>
+		<div class="main-container">
+			<div class="top">
+				<div class="canvas-description">
+					<canvas id="skycon" width="100" height="100"></canvas>
+					<p id="description" class="info-text"></p>
+				</div>
+				 <div class="faces">
+					<p class="face"><i style="color:#fe5d5d" class="fa fa-frown-o" aria-hidden="true"></i></p>
+					<p class="face"><i style="color:#feae5d" class="fa fa-meh-o" aria-hidden="true"></i></p>
+					<p class="face"><i style="color:#5dfeae" class="fa fa-smile-o" aria-hidden="true"></i></p>
+					<p class="face"><i style="color:#5daefe" class="fa fa-frown-o" aria-hidden="true"></i></p>
+				</div> 
+				<div class="scale-container">
+					<div class="scale">
+						<div id="fill"></div>
+					</div>
+					<span class="temp"><i class="#" aria-hidden="true"></i><p id="temp"></p></span>
+				</div>
+			</div>
+
+			<div class="info-row">
+				<canvas id="rain-canvas" width="30" height="30" title="Chance of rain"></canvas><span id="rain" class="small-info-text"></span>
+				<canvas id="wind-canvas" width="30" height="30" title="Wind speed"></canvas><span id="wind" class="small-info-text"></span>
+				<p id="app-temp" class="small-info-text"></p>
+			</div>
+		</div>
+		<div class="forecast">
+			<div class="day-container1 dc">
+				<div class="info">
+					<p class="day">
+					</p>
+					<canvas id="canvas1" width="50" height="50" class="mini-canvas"></canvas>
+					<span class="mini-temp">
+				</span>
+				</div>
+				<div class="mini-scale">
+					<div class="mini-fill">
+					</div>
+				</div>
+			</div>
+			<div class="day-container2 dc">
+				<div class="info">
+
+					<p class="day">
+					</p>
+					<canvas id="canvas2" width="50" height="50" class="mini-canvas"></canvas>
+					<span class="mini-temp">
+				</span>
+				</div>
+
+				<div class="mini-scale">
+					<div class="mini-fill">
+					</div>
+				</div>
+			</div>
+			<div class="day-container3 dc">
+				<div class="info">
+
+					<p class="day">
+					</p>
+					<canvas id="canvas3" width="50" height="50" class="mini-canvas"></canvas>
+					<span class="mini-temp">
+				</span>
+				</div>
+
+				<div class="mini-scale">
+					<div class="mini-fill">
+					</div>
+				</div>
+			</div>
+			<div class="day-container4 dc">
+				<div class="info">
+
+					<p class="day">
+					</p>
+					<canvas id="canvas4" width="50" height="50" class="mini-canvas"></canvas>
+					<span class="mini-temp">
+				</span>
+				</div>
+
+				<div class="mini-scale">
+					<div class="mini-fill">
+					</div>
+				</div>
+			</div>
+			<div class="day-container5 dc">
+				<div class="info">
+
+					<p class="day">
+					</p>
+					<canvas id="canvas5" width="50" height="50" class="mini-canvas"></canvas>
+					<span class="mini-temp">
+				</span>
+				</div>
+
+				<div class="mini-scale">
+					<div class="mini-fill">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>
+			Created by <a href="#">Sai preetham</a>     <a>SIN</a> project.
+		</p>
+	</footer>
+  	<script src="https://use.fontawesome.com/b5722f1bf7.js"></script>
+<script src="preetham_analysis.js"></script>
+</body>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./rainfallscript.js"></script>
+
+
+</body>
+</html>
